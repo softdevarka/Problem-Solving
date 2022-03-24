@@ -5,8 +5,8 @@ class Solution {
 	if (n < 3)
 		return n;
 		
-	var i = 2;
-	for (var j = i; j < n; j++)
+	int i = 2;
+	for (int j = i; j < n; j++)
 		if (nums[j] != nums[i - 2])
 			nums[i++] = nums[j];
 			
