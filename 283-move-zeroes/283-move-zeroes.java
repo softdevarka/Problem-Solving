@@ -7,10 +7,8 @@ class Solution {
                 int temp = nums[count];
                 nums[count] = nums[i];
                 nums[i] = temp;
-            count++;
+                count ++;
+            }
         }
-        
     }
-}
-
 }
