@@ -9,23 +9,14 @@
  * }
  */
 class Solution {
-public ListNode reverseList(ListNode head) {
-if (head == null || head.next == null){
-return head;
-}
-ListNode p = head;
-ListNode q = p.next;
-ListNode r = q.next;
-while(q!=null){
-q.next = p;
-p = q;
-q = r;
-if (r!=null){
-r = r.next;
-}
-}
-head.next = null;
-head = p;
-return head;
-}
+    public ListNode reverseList(ListNode head) {
+        ListNode newHead = null;
+        while (head != null){
+            ListNode next = head.next;
+            head.next = newHead;
+            newHead = head;
+            head = next;
+        }
+        return newHead;
+    }
 }
