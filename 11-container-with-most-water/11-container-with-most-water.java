@@ -6,11 +6,11 @@ class Solution {
         while (a_pointer < b_pointer){
             if(height[a_pointer]<height[b_pointer]){
                 max_area = Math.max(max_area, height[a_pointer] * (b_pointer - a_pointer));
-                        a_pointer++;
+                        a_pointer += 1;
             }
             else{
                 max_area = Math.max(max_area, height[b_pointer] * (b_pointer - a_pointer));
-                        b_pointer--;
+                        b_pointer -= 1;
             }
         }
         return max_area;
