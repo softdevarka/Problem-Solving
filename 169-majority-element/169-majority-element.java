@@ -38,7 +38,7 @@ class Solution{
         int count = 0;
         int element = 0;
         
-        for(int num:nums){
+        for(int num:nums){ // enhanced for loop or for each loop.
             if(count == 0){
                 element = num;
             }
