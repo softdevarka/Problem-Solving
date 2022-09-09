@@ -35,19 +35,19 @@ class Solution {
                     temp = nums[low];
                     nums[low] = nums[mid];
                     nums[mid] = temp;
-                    low += 1;
-                    mid += 1;
+                    low += 1; //low++
+                    mid += 1; //mid++
                     break;
                 }
                 case 1:
-                    mid += 1;
+                    mid += 1; //mid++
                     break;
                     
                 case 2:
                     temp = nums[mid];
                     nums[mid] = nums[high];
                     nums[high] = temp;
-                    high -= 1;
+                    high -= 1; //high--
                     break;
             }
         }
