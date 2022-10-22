@@ -1,16 +1,19 @@
 class Solution {
+    static final int CHAR = 256;
     public boolean isAnagram(String s, String t) {
-        if(s.length() != t.length()){
+         if(s.length() != t.length()){
             return false;
         }
-        char[] a1 = s.toCharArray();
-        Arrays.sort(a1);
-        s = new String(a1);
-        
-        char[] a2 = t.toCharArray();
-        Arrays.sort(a2);
-        t= new String(a2);
-        
-        return s.equals(t);
+        int[] count = new int[CHAR];
+        for(int i=0; i<s.length(); i++){
+            count[s.charAt(i)]++;
+            count[t.charAt(i)]--;
+        }
+        for(int i=0; i<CHAR; i++){
+            if(count[i] != 0){
+                return false;
+            }
+        }
+        return true;
     }
 }
