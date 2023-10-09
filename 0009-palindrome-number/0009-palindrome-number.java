@@ -10,11 +10,12 @@ class Solution {
             rev = rev * 10 + lastDigits;
             temp = temp/10;
         }
-        if(rev == x) {
-            return true;
-        }
-        else{
-            return false;
-        }
+        // if(rev == x) {
+        //     return true;
+        // }
+        // else{
+        //     return false;
+        // }
+        return (rev == x);
     }
 }
