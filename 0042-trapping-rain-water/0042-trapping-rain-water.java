@@ -9,7 +9,7 @@ class Solution {
             lmax[i] = Math.max(lmax[i-1], height[i]);
         }
         
-        rmax[rmax.length-1] = height[rmax.length-1];
+        rmax[rmax.length-1] = height[height.length-1];
         
         for(int i=rmax.length-2; i>=0; i--){
             rmax[i] = Math.max(rmax[i+1], height[i]);
