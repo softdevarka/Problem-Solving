@@ -5,6 +5,7 @@ Data Structures & Algorithms Problem Solving
 ## Array
 |  |
 | ------- |
+| [0031-next-permutation](https://github.com/softdevarka/Problem-Solving/tree/master/0031-next-permutation) |
 | [0053-maximum-subarray](https://github.com/softdevarka/Problem-Solving/tree/master/0053-maximum-subarray) |
 ## Divide and Conquer
 |  |
@@ -14,4 +15,8 @@ Data Structures & Algorithms Problem Solving
 |  |
 | ------- |
 | [0053-maximum-subarray](https://github.com/softdevarka/Problem-Solving/tree/master/0053-maximum-subarray) |
+## Two Pointers
+|  |
+| ------- |
+| [0031-next-permutation](https://github.com/softdevarka/Problem-Solving/tree/master/0031-next-permutation) |
 <!---LeetCode Topics End-->
